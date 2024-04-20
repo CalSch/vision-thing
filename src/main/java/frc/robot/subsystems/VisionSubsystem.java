@@ -15,10 +15,10 @@ public class VisionSubsystem extends SubsystemBase {
   public IntegerArrayTopic topic1;
   public final IntegerArraySubscriber idSub;
   
-  /** Creates a new ExampleSubsystem. */
+  /** Creates a new VisionSubsystem. */
   public VisionSubsystem() {
     instance = NetworkTableInstance.getDefault();
-    topic1 = instance.getIntegerArrayTopic("/vision server/pipelines/bv2024/ids");
+    topic1 = instance.getIntegerArrayTopic("/Vision Server/Pipelines/driverCam/ids");
     idSub = topic1.subscribe(new long[0]);
 
   }
